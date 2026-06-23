@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int a[] = {1, 2, 3, 4, 5};
+    int steps = 0;
+    int distance;
+
+    printf("Enter the distance to be covered\n");
+    scanf("%d", &distance);
+
+    int rem = distance % 5;
+
+    if (rem != 0) {
+        steps++;
+    }
+
+    steps = steps + distance / 5;
+
+    printf("%d\n", steps);
+
+    return 0;
+}
